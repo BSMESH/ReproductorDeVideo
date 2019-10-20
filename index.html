@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reproductor de video</title>
+    <link rel="import" href="./components/ReproductorVideo/index.html">
+    <link rel="import" href="./components/ListaReproduccion/index.html">
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, sans-serif;
+        }
+
+        #contenedor {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+        }
+
+    </style>
+    <div id="contenedor">
+            <app-reproductor></app-reproductor>
+            <app-lista></app-lista>
+    </div>
+</body>
+
+</html>
