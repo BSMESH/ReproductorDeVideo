@@ -1,3 +1,4 @@
+class DragNDrop extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: 'open' });
@@ -24,3 +25,4 @@
     this.shadow.innerHTML = template;
   }
 }
+window.customElements.define('app-drag-drop', DragNDrop);
